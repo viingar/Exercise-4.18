@@ -1,0 +1,12 @@
+2023-11-08 02:06:57 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM PERSON_MESSAGES\000d\000a[*]SELECT * FROM PERSON\000d\000aSELECT * FROM MESSAGE"
+Syntax error in SQL statement "SELECT * FROM PERSON_MESSAGES\000d\000a[*]SELECT * FROM PERSON\000d\000aSELECT * FROM MESSAGE"; SQL statement:
+SELECT * FROM PERSON_MESSAGES
+SELECT * FROM PERSON
+SELECT * FROM MESSAGE [42000-214]
+2023-11-08 02:07:06 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM PERSON_MESSAGES,\000d\000a[*]SELECT * FROM PERSON,\000d\000aSELECT * FROM MESSAGE"; ожидалось "identifier"
+Syntax error in SQL statement "SELECT * FROM PERSON_MESSAGES,\000d\000a[*]SELECT * FROM PERSON,\000d\000aSELECT * FROM MESSAGE"; expected "identifier"; SQL statement:
+SELECT * FROM PERSON_MESSAGES,
+SELECT * FROM PERSON,
+SELECT * FROM MESSAGE [42001-214]
